@@ -20,18 +20,28 @@
         }
 
         button.arial{
-            background-color: chartreuse;
+            background-color: lightgreen;
         }
 
-        h1::first-letter, p::first-letter{
+        h1::first-letter, p.arial{
             font-weight: bold;
-            color: red !important;
+            color: red;
         }
+
+        button:hover, p:hover{
+            background-color: black;
+            color: white;
+        }
+
+        input:focus{
+            box-shadow: blue 3px 3px;
+        }
+
 
     </style>
 </head>
 <body>
-    <h1 style="color: royalblue;">Fernando Herrera</h1>
+    <h1 style="color: lightseagreen;">Ejemplo CSS</h1>
 
     <p id="grande">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, ipsum quae. Expedita veritatis animi natus vero similique facilis cumque fugit, temporibus tempora sed aspernatur non ullam consectetur distinctio. Dolorum, molestias.</p>
 
@@ -41,6 +51,7 @@
 
     <button class="arial">Presióname</button>
     <button>Presióname x2</button>
-    
+    <br><br>
+    <input type="text">
 </body>
 </html>
