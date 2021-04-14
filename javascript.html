@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-</head>
-<body>
-    <h1>Hola Mundo</h1>
-    <div id="section">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript</title>
+
+        <style>
+            .aux {
+                color: blue;
+                padding: 10px;
+                border: 1px solid red;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <h1>Hola Mundo</h1>
+        
+        <div id="section">
+            <p class="p">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum autem similique optio eaque debitis, vel
+                molestiae quaerat molestias facere. Ea facilis repellendus quidem molestias corporis eius at maiores
+                recusandae asperiores.
+            </p>
+        </div>
+
+        <img src="" alt="UASLP">
+
+        <p id="nuevo"></p>
+
         <p class="p">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum autem similique optio eaque debitis, vel molestiae quaerat molestias facere. Ea facilis repellendus quidem molestias corporis eius at maiores recusandae asperiores.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis exercitationem, cum atque officiis
+            aspernatur sed! Velit tenetur sapiente minus, doloribus dolorum ipsum dicta expedita corrupti, cupiditate
+            asperiores, nam ratione eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ea sunt, ut
+            doloremque amet illum et possimus, quos dignissimos repellendus labore, quod ipsa tenetur quidem veniam sapiente
+            earum atque temporibus?
         </p>
-    </div>
+        
+        <!-- Así se importa el Script desde un documento externo -->
+        <!-- <script src="nombre_Script.js"></script> -->
 
-    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis exercitationem, cum atque officiis aspernatur sed! Velit tenetur sapiente minus, doloribus dolorum ipsum dicta expedita corrupti, cupiditate asperiores, nam ratione eum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi ea sunt, ut doloremque amet illum et possimus, quos dignissimos repellendus labore, quod ipsa tenetur quidem veniam sapiente earum atque temporibus?</p>
+        <!-- Este es el ejemplo 1 de Script. Lunes 12 de Abril 2021 -->
+        <!-- <script>
+            var x = 1;
+            var y = "Hola Mundo";
+            const PI = 3.1416;
 
+            function suma(a, b) {
+                return a + b;
+            }
 
-    <script src="app.js"></script>
-    <!-- <script>
-        var x = 1;
+            var section = document.getElementById("section");
+            var h1 = document.getElementsByTagName("h1");
+            var p = document.getElementsByClassName("p");
+            var query = document.querySelectorAll(".p");
 
-        //Este método imprime en la página
-        //document.write(x);
+            console.log(x);
+            console.log(y);
+            console.log(PI);
+            console.log(suma(3, 5));
+            console.log(section);
+            console.log(h1);
+            console.log(p);
+            console.log(query);
+        </script> -->
 
-        //Abre una alerta en el navegador
-        //alert(x);
+        <!-- Este es el ejemplo 2 de Script. Martes 13 de Abril 2021 -->
+        <!-- <script>
+            var section = document.getElementById("section");
+            console.log(section.innerHTML);
+            console.log(section.innerText);
 
-        //Imprime en la consola del inspeccionador
-        console.log(x);
-    </script> -->
-    
-</body>
+            var imagen = document.querySelector("img");
+            imagen.setAttribute("src", "images/uaslp.jpg");
+            console.log(imagen.src);
+
+            var parrafo = document.getElementById("nuevo");
+            parrafo.innerHTML = "Este es el nuevo <b>parrafo</b>";
+        </script>   -->
+
+        <!-- Este es el ejemplo 3 de Script. Martes 13 de Abril 2021 -->
+        <!-- <script>
+            var list = document.createElement("ul");
+
+            var elemento_x = document.createElement("li");
+            var texto = document.createTextNode("Elemento X");
+            list.appendChild(elemento_x);
+            elemento_x.appendChild(texto);
+
+            var elemento_y = document.createElement("li");
+            var texto = document.createTextNode("Elemento Y");
+            list.appendChild(elemento_y);
+            elemento_y.appendChild(texto);
+
+            var elemento_w = document.createElement("li");
+            var texto = document.createTextNode("Elemento W");
+            list.appendChild(elemento_w);
+            elemento_w.appendChild(texto);
+
+            console.log(list);
+        </script> -->
+
+        <!-- Este es el ejemplo 4 de Script. Martes 13 de Abril 2021 -->
+        <!-- <script>
+            var html =
+                `<ul>
+                    <li>Elemento W</li>
+                    <li>Elemento X</li>
+                    <li>Elemento Y</li>               
+                </ul>`;
+
+            document.body.innerHTML = document.body.innerHTML + html;
+        </script> -->
+
+    </body>
 </html>
